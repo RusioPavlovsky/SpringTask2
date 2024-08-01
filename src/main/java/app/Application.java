@@ -15,6 +15,7 @@ public class Application {
             AnimalsCage bean =
                     applicationContext.getBean(AnimalsCage.class);
             bean.whatAnimalSay();
+
             Timer bean2 = (Timer) applicationContext.getBean("timer");
             System.out.println(bean2.getTime());
         }
