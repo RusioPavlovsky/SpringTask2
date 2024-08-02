@@ -10,6 +10,8 @@ import org.springframework.context.annotation.Scope;
 @ComponentScan(basePackages = "app")
 public class AppConfig {
 
+    //fixme не обязательно делать его прототипом
+    //fixme можно сделать Timer компонентом, тогда Spring сам создаст бин
     @Scope("prototype")
     @Bean("timer")
     public Timer getTimer() {

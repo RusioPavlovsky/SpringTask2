@@ -26,6 +26,9 @@ public class AnimalsCage {
         System.out.println("Say:");
         System.out.println(animal.toString());
         System.out.println("At:");
+        /*fixme время печатается всегда разное, потому что каждый раз создается новый объект. Используй поле timer
+           вместо new Timer()
+        */
         System.out.println(new Timer().getTime());
         System.out.println("________________________");
 
