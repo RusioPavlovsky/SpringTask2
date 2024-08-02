@@ -13,7 +13,6 @@ public class AnimalsCage {
 
     @Autowired
     private Timer timer;
-
     public AnimalsCage(Timer timer) {
         this.timer = timer;
     }
